@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Trabajo Final Tienda</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+
+    <string name="op_inicio_v">Inicio</string>
+    <string name="op_mi_mascotienda_v">Mi Tienda</string>
+    <string name="op_resenia_v">Reseñas</string>
+    <string name="op_cerrar_sesion_v">Cerrar sesion</string>
+
+    <string name="op_mis_productos_v">Mis productos</string>
+    <string name="op_mis_ordenes_v">Ordenes</string>
+
+
+    <string name="txt_bienvenida">Bienvenido</string>
+
+
+    <!-- Registro vendedor -->
+    <string name="txtRegistroV">Registro de vendedor</string>
+    <string name="etNombresV">Nombres Completos</string>
+    <string name="etEmailV">Email</string>
+    <string name="etPasswordV">Password</string>
+    <string name="etCPasswordV">Confirmar password</string>
+    <string name="btnRegistrarV">Registrarme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
