@@ -54,10 +54,17 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
 
     }
 
+    private fun cerrarSesion(){
+        FirebaseAuth!!.signOut()
+        startActivity(Intent(applicationContext, LoginVendedorActivity::class.java))
+        finish()
+        Toast.makeText(applicationContext, "Has cerrado sesion", Toast.LENGTH_SHORT).show()
+    }
+
     private fun comprobarSesion() {
         /*Si el usuario no ah iniciado sesion lo redirecciona al inicio sesion*/
         if (FirebaseAuth!!.currentUser==null){
-            startActivity(Intent(applicationContext, RegistroVendedorActivity :: class.java))
+            startActivity(Intent(applicationContext, LoginVendedorActivity :: class.java))
             Toast.makeText(applicationContext, "Vendedor no registrado o no se ah logueado", Toast.LENGTH_SHORT).show()
         }else{
             Toast.makeText(applicationContext, "Vendedor en linea", Toast.LENGTH_SHORT).show()
@@ -87,7 +94,7 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
                 replaceFragment(FragmentReseniasV())
             }
             R.id.op_cerrar_sesion_v->{
-                Toast.makeText(applicationContext, "Saliste de la app", Toast.LENGTH_SHORT).show()
+                cerrarSesion()
             }
             R.id.op_mis_productos_v->{
                 replaceFragment(FragmentMisProductosV())

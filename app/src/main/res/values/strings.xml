@@ -27,4 +27,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
+    <!-- Login de vendedor -->
+
+    <string name="txtLoginV">Login de vendedor</string>
+    <string name="btnLoginV">Ingresar </string>
+    <string name="txtNoCuenta">No tienes una cuenta?</string>
+    <string name="tvRegistrarV">Registrarme</string>
+
+
 </resources>
